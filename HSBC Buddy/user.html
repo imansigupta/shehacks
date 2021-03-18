@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HSBC Buddy</title>
+	<link rel="shortcut icon" href="images/logo4.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@600&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="icons/css/fontawesome.css">
+	<link rel="stylesheet" href="icons/css/brands.min.css">
+	<link rel="stylesheet" href="icons/css/solid.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/forms.css">
+	
+	<link rel="stylesheet" href="css/user.css">
+
+</head>
+
+<body>
+	<div id="content">
+
+		<div class="container-fluid userContainer">
+			<!-- Side Nav content display area -->
+			<div class="sidenav show" id="sidenav-main">
+				<!-- Sidenav header -->
+				<div class="sidenav-header d-flex align-items-center">
+
+					<span class="headerHead h3">HSBC Buddy</span>
+
+				</div>
+				<!-- User mini profile -->
+				<div class="sidenav-user d-flex flex-column align-items-center justify-content-between text-center">
+					<!-- Avatar -->
+					<div>
+						<a href="#" class="avatar rounded-circle avatar-lg"> <img alt="Image placeholder" src="images/avatar1.png"
+								id="">
+						</a>
+						<div class="mt-4">
+							<h5 class="mb-0 text-white" id="fullName">Mansi Gupta</h5>
+							
+							<span class="d-block text-sm text-white opacity-8 mb-3" id="email">mansi.gupta@hsbc.co.in</span> 
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<!-- Application nav -->
+				<div class="nav-application clearfix">
+					<span class="btn btn-square text-sm active" id="Home"> <span class="btn-inner--icon d-block"><i
+								class="fas fa-home fa-2x"></i></span> <span
+							class="btn-inner--icon d-block pt-2">Home</span>
+					</span> <span class="btn btn-square text-sm" id="Profile"> <span class="btn-inner--icon d-block"><i
+								class="fas fa-users fa-2x"></i></span> <span
+							class="btn-inner--icon d-block pt-2">Interest Group</span>
+					</span> <span class="btn btn-square text-sm" id="psychologist"> <span class="btn-inner--icon d-block"><i
+								class="fas fa-user fa-2x"></i></span><span
+							class="btn-inner--icon d-block pt-2">Talk to Psychologist</span>
+					</span> 
+				</div>
+
+			</div>
+
+			<!-- Main content display area -->
+			<div class="main-content position-relative">
+				<nav class="navbar navbar-main navbar-expand-lg navbar-dark navbar-border" id="navbar-main">
+					<div class="container-fluid">
+
+										
+					<!-- Page title -->
+
+			<!-- View Profile -->
+
+				<section id="showProfile" class="page-content changeDisplayTypeNone">
+					<div class="row">
+						<div class="offset-2 col-8">
+							<div class="formHeading">
+
+								<span class="h5">Interest Groups</span>
+
+							</div>
+							<div class="interestGroups">
+								<div id="InterestGroupList">
+									<ul>
+										<li ><a id="machineLearning" href="#">Machine Learning</a></li>
+										<li><a  id="cricket" href="#">Cricket</a></li>
+										<li ><a id="cyberSecurity" href="#">Cyber Security</a></li>
+										<li><a  id="blockchain" href="#">BlockChain</a></li>
+										<li ><a id="finance" href="#">Finance</a></li>
+									</ul>
+								</div>
+								<div class="InterestGroupChat">
+									<div class="interestGroupName">
+										<h3 class="groupName"></h3>
+
+										<button id="joinGroup">Join Group</button>
+										<button id="leaveGroup">Leave Group</button>
+										<button id="createMeeting">Create Meeting</button>
+										<button id="joinMeeting"><a id = "linkMeeting" target="blank">Join Meeting</a></button>
+									</div>
+									<div class="interestMessages">
+										<div class="leftMessage">
+											<span class="messageText">Hii</span>
+										</div>
+										<div class="rightMessage">
+											<span class="messageTest">Hello There</span>
+										</div>
+									</div>
+									<div class="inputTextField">
+										<input id="inputText" type="text" placeholder="What are your views .....">
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+
+
+					</div>
+
+				</section>
+
+
+
+			</div>
+
+		</div>
+
+		<div class="modal fade" id="loginFailureModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">WARNING</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="failureMessage"></p>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+
+	<script src="js/displayChangeUtility.js"></script>
+	<script type="text/javascript" src="js/profile.js"></script>
+	
+</body>
+
+</html>
