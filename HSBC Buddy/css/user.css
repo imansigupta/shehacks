@@ -55,6 +55,68 @@ zbody {
 	display: none;
 }
 
+.interestGroups{
+	background-color: #f8f8f8;
+	color: black;
+}
+#InterestGroupList ul {
+	padding: 0px;
+}
+#InterestGroupList ul li{
+	color: black;
+	list-style: none;
+	/* text-align: center; */
+	width: 130pxpx;
+	padding: 10px;
+}
+#InterestGroupList ul li a{
+	width: 135px;
+	display: block;
+	color: black;
+	border-bottom: 1px solid rgb(215,215, 225);
+
+}
+#InterestGroupList ul li a:hover,#InterestGroupList ul li a:focus{
+outline: none;
+text-decoration: none;
+}
+
+#Chatborder{
+	border-right: 1px solid rgb(215,215, 225);
+}
+
+.buttonHolder{
+	text-align: right;
+}
+.InterestGroupChat{
+
+	padding: 10px;
+}
+.messageHandler{
+	margin: 20px 0px;
+	margin-right: 20px;
+	padding: 10px;
+	border:1px solid rgb(215,215, 225);
+	box-shadow: 0px 0px 7px 3px rgb(0 0 0 / 10%)
+}
+.leftMessage{
+	text-align: left;
+}
+.leftMessage span, .rightMessage span{
+	display: block;
+}
+.rightMessage{
+	text-align: right;
+}
+#inputText{
+	width: 100%;
+	margin-top: 20px;
+	/* background-color: transparent; */
+	color: black;
+	border: 1px solid rgb(215,215, 225);
+	border-radius:6px;
+}
+
 /* 
 .sidenav-toggler {
     border: 0;
@@ -389,40 +451,6 @@ a.text-white:hover {
 	max-width: 50%;
 }
 
-table {
-	color: black;
-}
-
-#tableOfContact i {
-	margin-left: 10px;
-	cursor: pointer;
-	color:#0b417a
-}
-
-#omnisearch #mySearchBtn {
-	color: white;
-	background: transparent;
-	border: none;
-}
-
-#omnisearch #mySearchBtn i {
-	color: white;
-	margin-top: 7px;
-}
-
-#omnisearch select {
-	color: white;
-	background: transparent;
-	width: 25%;
-}
-
-#omnisearch option {
-	color: black;
-}
-
-#omnisearch input::placeholder {
-	color: white
-}
 
 #welcomeMessageScreen {
 	margin: 4% 0%;
@@ -431,6 +459,7 @@ table {
 
 #showProfile, #showAddContacts {
 	margin-top: 5%;
+	width: 100%;
 }
 
 #showProfile .formHeading, #showAddContacts .formHeading {
@@ -457,107 +486,6 @@ table {
 	color: white;
 }
 
-#friendContent col-5 {
-	text-align: center;
-}
-
-.modal-header {
-	background: linear-gradient(40deg, #45cafc, #303f9f) !important;
-	color: white;
-}
-
-.friendBasicDetails h5 {
-	font-size: 20px;
-	margin-bottom: 10px !important;
-}
-
-.friendBasicDetails span {
-	color: #848383;
-	margin-bottom: 5px !important;
-	font-size: 16px;
-}
-
-.failureMessage, .birthdayMessage {
-	color: #4f3011f7;
-}
-
-#showBlockedContacts .actions {
-	justify-content: center !important;
-}
-
-.addContactButtonHolder {
-	display: inline-block;
-	float: right;
-}
-
-#tableOfContact th, #displayUsers table th {
-	text-align: center;
-	padding:10px 4px;
-	border-top: 1px solid #80808042;
-	border-right: 1px solid #80808042;
-	    color: #0a5495;
-}
-
-
-#tableOfContact tr, #displayUsers tr {
-	padding: 10px;
-	border-bottom: 1px solid #80808042;
-}
-
-#tableOfContact td, #displayUsers td {
-	padding: 10px 15px;
-	border-right: 1px solid #80808042;
-}
-
-#tableOfContact,#displayUsers  table{
-	background: white;
-}
-
-#tableOfContact .avatar-lg {
-	width: 3rem;
-	height: 3rem;
-}
-
-#tableOfContact span, #displayUsers span {
-	margin-left: 10px;
-}
-#displayContacts #deleteContacts{
-	float: right;
-    
-    
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin-top: 10px;
-    color: black;
-    padding: 10px;
-}
-
-#displayContacts #deleteContacts:focus{
-	outline:none;
-}
-
-#displaySearch .card-body{
-	min-height:300px;
-}
-#displaySearch input{
-	margin-bottom:10px;
-}
-#searchValue{
-	color:white;
-}
-#searchValue:focus{
-	background:transparent;
-	color:white;
-}
-
-.adminContainer{
-	max-width: 2100px !important;
-	padding-left:10% !important;
-}
-#contentDisplayerForAdmin{
-	margin-left:10%;
-}
 
 
 

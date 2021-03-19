@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HSBC Buddy</title>
+	<title>HSBC Buddies</title>
 	<link rel="shortcut icon" href="images/logo4.jpg" type="image/x-icon">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -38,7 +38,7 @@
 				<!-- Sidenav header -->
 				<div class="sidenav-header d-flex align-items-center">
 
-					<span class="headerHead h3">HSBC Buddy</span>
+					<span class="headerHead h3">HSBC Buddies</span>
 
 				</div>
 				<!-- User mini profile -->
@@ -77,54 +77,62 @@
 			<div class="main-content position-relative">
 				<nav class="navbar navbar-main navbar-expand-lg navbar-dark navbar-border" id="navbar-main">
 					<div class="container-fluid">
-
-										
-					<!-- Page title -->
-
-			<!-- View Profile -->
-
 				<section id="showProfile" class="page-content changeDisplayTypeNone">
-					<div class="row">
-						<div class="offset-2 col-8">
+					
+						
 							<div class="formHeading">
 
 								<span class="h5">Interest Groups</span>
 
-							</div>
+							
 							<div class="interestGroups">
-								<div id="InterestGroupList">
-									<ul>
-										<li ><a id="machineLearning" href="#">Machine Learning</a></li>
-										<li><a  id="cricket" href="#">Cricket</a></li>
-										<li ><a id="cyberSecurity" href="#">Cyber Security</a></li>
-										<li><a  id="blockchain" href="#">BlockChain</a></li>
-										<li ><a id="finance" href="#">Finance</a></li>
-									</ul>
-								</div>
-								<div class="InterestGroupChat">
-									<div class="interestGroupName">
-										<h3 class="groupName"></h3>
+								<div class="row">
+									<div class="col-2" id="Chatborder">
+										<div id="InterestGroupList">
+											<ul>
+												<li ><a id="machineLearning" href="#">Machine Learning</a></li>
+												<li><a  id="cricket" href="#">Ind v/s Eng</a></li>
+												<li ><a id="chaiParCharcha" href="#">Chai Par Charcha</a></li>
+												<li><a  id="blockchain" href="#">BlockChain</a></li>
+												<li ><a id="finance" href="#">Upcoming Travelling Plans</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-10">
+										<div class="InterestGroupChat">
+											<div class="interestGroupName">
+												<h4 class="groupName"></h4>
+		
+												<div class="buttonHolder">
+													<button type="button" class="btn btn-success" id="joinGroup">Join Group</button>
+												<button type="button" class="btn btn-danger" id="leaveGroup">Leave Group</button>
+												<button  type="button" class="btn btn-info" id="joinMeeting"><a id = "linkMeeting" target="blank">Join Meeting</a></button>
+													
+												</div>
+											</div>
+											<div class="messageHandler">
+												<div class="interestMessages">
+													<div class="leftMessage">
+														<span class="messageText">Sid: Hii</span>
+														<span class="messageTest">Swati: Hello There</span>
+													</div>
+													<div class="rightMessage">
+														
+													</div>
+												</div>
+												<div class="inputTextField">
+													<input id="inputText" type="text" placeholder="What are your views .....">
+												</div>
 
-										<button id="joinGroup">Join Group</button>
-										<button id="leaveGroup">Leave Group</button>
-										<button id="createMeeting">Create Meeting</button>
-										<button id="joinMeeting"><a id = "linkMeeting" target="blank">Join Meeting</a></button>
-									</div>
-									<div class="interestMessages">
-										<div class="leftMessage">
-											<span class="messageText">Hii</span>
+											</div>
 										</div>
-										<div class="rightMessage">
-											<span class="messageTest">Hello There</span>
-										</div>
-									</div>
-									<div class="inputTextField">
-										<input id="inputText" type="text" placeholder="What are your views .....">
+											
 									</div>
 								</div>
 								
 								
-							</div>
+								
+							
 						</div>
 
 
@@ -160,10 +168,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 	</div>
 
 
